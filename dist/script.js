@@ -15,7 +15,7 @@ const closeModals = () => {
   body.style.overflow = '';
 };
 document.querySelectorAll('.contact-trigger').forEach((button) => button.addEventListener('click', () => openModal('contact-modal')));
-document.querySelectorAll('.booking-trigger').forEach((button) => button.addEventListener('click', () => openModal('booking-modal')));
+document.querySelectorAll('.booking-trigger').forEach((button) => button.addEventListener('click', () => openModal('contact-modal')));
 document.querySelectorAll('[data-close]').forEach((button) => button.addEventListener('click', closeModals));
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeModals(); });
 menuToggle.addEventListener('click', () => {
@@ -27,10 +27,3 @@ menuToggle.addEventListener('click', () => {
 mobileMenu.querySelectorAll('a, button').forEach((item) => item.addEventListener('click', () => {
   mobileMenu.classList.remove('is-open'); menuToggle.classList.remove('is-open'); menuToggle.setAttribute('aria-expanded', 'false'); mobileMenu.setAttribute('aria-hidden', 'true');
 }));
-document.getElementById('booking-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const note = document.getElementById('form-note');
-  note.textContent = 'Спасибо! Заявка принята — контакты подключения добавим перед запуском.';
-  note.style.color = '#dda1ff';
-  event.currentTarget.reset();
-});

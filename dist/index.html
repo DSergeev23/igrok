@@ -11,19 +11,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="overrides.css" />
   </head>
   <body>
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="IGROK, на главную">IGROK<span>®</span></a>
       <nav class="desktop-nav" aria-label="Главное меню">
-        <a href="#about">О нас</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#offers">Акции</a><a href="#contacts">Контакты</a>
+        <a href="#about">О нас</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#why">Почему мы</a><a href="#contacts">Контакты</a>
       </nav>
-      <button class="outline-button contact-trigger" type="button">Связаться</button>
+      <button class="outline-button contact-trigger header-contact" type="button">Связаться</button>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
     </header>
 
     <div class="mobile-menu" aria-hidden="true">
-      <a href="#about">О нас</a><a href="#booking">Забронировать</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#offers">Акции</a><a href="#contacts">Контакты</a>
+      <a href="#about">О нас</a><a href="#booking">Забронировать</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#why">Почему мы</a><a href="#contacts">Контакты</a>
       <button class="text-button contact-trigger" type="button">Связаться</button>
     </div>
 
@@ -39,15 +40,15 @@
         <div class="about-grid">
           <h1>Вечер —<br /><em>по вашим</em><br />правилам.</h1>
           <div class="about-copy">
-            <p>IGROK привозит PlayStation 5 и всё, что нужно для атмосферного отдыха, прямо к вам. Без поездок, ограничений по времени и лишней суеты.</p>
-            <p class="muted">Выбирайте консоль, добавляйте кальян — мы соберём идеальный комплект и доставим его по Москве.</p>
-            <button class="pill-button booking-trigger" type="button">Забронировать <span>↗</span></button>
+            <p>Не нужно придумывать, чем занять вечер. IGROK привозит готовый сценарий отдыха: PlayStation 5, кальян и настроение — прямо к вашей двери.</p>
+            <p class="muted">Для двоих, друзей или вечера наедине: выбираете повод, а не список техники. Остальное уже продумано и готово приехать к вам после звонка.</p>
+            <button class="pill-button booking-trigger" type="button">Выбрать сценарий <span>↗</span></button>
           </div>
         </div>
         <div class="benefits" aria-label="Преимущества сервиса">
           <div><span>01</span><strong>PlayStation 5</strong><small>последнего поколения</small></div>
-          <div><span>02</span><strong>Доставка</strong><small>по Москве</small></div>
-          <div><span>03</span><strong>Готовый комплект</strong><small>для комфортного вечера</small></div>
+          <div><span>02</span><strong>Доставка</strong><small>сразу после звонка</small></div>
+          <div><span>03</span><strong>Готовые сценарии</strong><small>под повод и компанию</small></div>
           <div><span>04</span><strong>От 1 дня</strong><small>аренда на любой срок</small></div>
         </div>
       </section>
@@ -56,45 +57,52 @@
         <div class="booking-glow"></div>
         <div class="section-kicker">02 / Забронировать</div>
         <div class="booking-layout">
-          <div><p class="eyebrow">Соберите свой вечер</p><h2>Всё начинается<br />с <em>одного</em> клика.</h2></div>
+          <div><p class="eyebrow">Вечер уже собран за вас</p><h2>Ваши планы<br />не должны ждать<br /><em>такси.</em></h2></div>
           <div class="booking-panel">
-            <p>Оставьте заявку — уточним время, адрес и подготовим комплект.</p>
-            <button class="primary-button booking-trigger" type="button">Выбрать комплект <span>↗</span></button>
-            <small>Доставка по Москве · ежедневно</small>
+            <p>Одно сообщение — и готовый сценарий уже в пути. Уточним время, адрес и привезём всё для вашего вечера.</p>
+            <button class="primary-button booking-trigger" type="button">Выбрать сценарий <span>↗</span></button>
+            <small>Доставка по Москве · готовим и отправляем после звонка</small>
           </div>
         </div>
+        <div class="booking-route" aria-label="Путь от заявки до вечера"><div><span>01</span><strong>Пишите нам</strong><small>когда решили, что вечер не должен быть обычным</small></div><div><span>02</span><strong>Выбираете сценарий</strong><small>для двоих, друзей или выходных</small></div><div><span>03</span><strong>Встречаете IGROK</strong><small>и переключаетесь из рутины в отдых</small></div></div>
       </section>
 
       <section class="services section" id="services">
-        <div class="section-head"><div class="section-kicker">03 / Услуги</div><p>Отдельно или в одной красивой коробке — выбирайте настроение вечера.</p></div>
+        <div class="section-head"><div class="section-kicker">03 / Сценарии вечера</div><p>Не позиции в корзине, а готовые планы на вечер — остаётся выбрать свой.</p></div>
         <div class="service-list">
-          <article class="service-card"><span>01</span><div><h3>PlayStation 5</h3><p>Консоль, два DualSense, HDMI и любимые игры — уже готовы к старту.</p></div><button class="card-action booking-trigger" type="button" aria-label="Забронировать PlayStation 5">↗</button></article>
-          <article class="service-card featured"><span>02</span><div><h3>Вечер на максимум</h3><p>PS5 и кальян в одном комплекте. Самый атмосферный вариант для двоих или компании.</p></div><button class="card-action booking-trigger" type="button" aria-label="Забронировать вечер на максимум">↗</button></article>
-          <article class="service-card"><span>03</span><div><h3>Кальян с доставкой</h3><p>Полностью подготовленный кальян, угли, вкусы и всё необходимое для спокойного вечера.</p></div><button class="card-action booking-trigger" type="button" aria-label="Забронировать кальян">↗</button></article>
+          <article class="service-card"><span>01</span><div><h3>Вечер для себя</h3><p>Когда хочется отключить уведомления, включить игру и провести время в своём ритме.</p></div><button class="card-action booking-trigger" type="button" aria-label="Связаться по сценарию Вечер для себя">↗</button></article>
+          <article class="service-card featured"><span>02</span><div><h3>Вечер на максимум</h3><p>PS5 и кальян уже в одном сценарии — для компании, которая собралась без долгих приготовлений.</p></div><button class="card-action booking-trigger" type="button" aria-label="Связаться по сценарию Вечер на максимум">↗</button></article>
+          <article class="service-card"><span>03</span><div><h3>Вдвоём до утра</h3><p>Готовый ритм для пары: большая игра, дымный кальян и ни одной лишней поездки.</p></div><button class="card-action booking-trigger" type="button" aria-label="Связаться по сценарию Вдвоём до утра">↗</button></article>
         </div>
+      </section>
+
+      <section class="games section" id="games">
+        <div class="section-kicker">04 / Всё уже готово</div>
+        <div class="games-intro"><h2>Не выбирайте<br />детали. <em>Выберите</em><br />повод.</h2><p>Футбол с друзьями, гонки до утра, кооператив для двоих или спокойный вечер дома — мы уже продумали, что нужно каждому сценарию.</p></div>
+        <div class="games-grid"><article><span>01</span><h3>Игра — часть сценария</h3><p>Не нужно собирать список и проверять, что к чему подходит. Привозим готовый вечер, в котором уже есть повод включить экран.</p></article><article class="games-delivery"><span>↗</span><h3>Сегодня решили — сегодня отдыхаете</h3><p>Подтверждаем время и сразу отправляем готовый сценарий по Москве. Без недельного планирования и лишних переписок.</p><button class="pill-button contact-trigger" type="button">Выбрать вечер <span>↗</span></button></article></div>
       </section>
 
       <section class="price section" id="price">
-        <div class="section-kicker">04 / Прайс</div>
-        <div class="price-intro"><h2>Выберите <em>свой</em><br />формат.</h2><p>Цены указаны как ориентир. Финальную стоимость подтвердим при оформлении брони.</p></div>
+        <div class="section-kicker">05 / Прайс</div>
+        <div class="price-intro"><h2>Выберите <em>свой</em><br />вечер.</h2><p>Вечер может быть спонтанным. Его организация — нет: поэтому каждый сценарий уже продуман за вас.</p></div>
         <div class="price-grid">
-          <article class="price-card"><p>Базовый</p><h3>PS5</h3><ul><li>PlayStation 5</li><li>2 контроллера DualSense</li><li>Комплект кабелей</li></ul><div class="price-value"><b>2 490 ₽</b><span>за сутки</span></div><button class="outline-button booking-trigger" type="button">Забронировать</button></article>
-          <article class="price-card best"><p>Выбор вечера</p><h3>PS5 + кальян</h3><ul><li>PlayStation 5</li><li>Кальян и всё необходимое</li><li>Два вкуса на выбор</li></ul><div class="price-value"><b>3 990 ₽</b><span>за сутки</span></div><button class="primary-button booking-trigger" type="button">Забронировать</button></article>
-          <article class="price-card"><p>Для компании</p><h3>Weekend</h3><ul><li>PS5 + кальян</li><li>Аренда на 3 дня</li><li>Выгода 1 470 ₽</li></ul><div class="price-value"><b>9 990 ₽</b><span>за 3 дня</span></div><button class="outline-button booking-trigger" type="button">Забронировать</button></article>
+          <article class="price-card"><p>Вечер для себя</p><h3>Перезагрузка</h3><ul><li>Большой экран и любимая игра</li><li>Всё уже подключено и готово</li><li>Никаких покупок ради одного вечера</li></ul><div class="price-value"><b>2 490 ₽</b><span>за сутки</span></div><button class="outline-button booking-trigger" type="button">Выбрать вечер</button></article>
+          <article class="price-card best"><p>Всё и сразу</p><h3>Поиграл. Покурил.</h3><ul><li>Полный сценарий для вечера</li><li>PS5, кальян и всё для настроения</li><li>Вам остаётся открыть дверь</li></ul><div class="price-value"><b>3 990 ₽</b><span>за сутки</span></div><button class="primary-button booking-trigger" type="button">Выбрать сценарий</button></article>
+          <article class="price-card"><p>Планы на выходные</p><h3>Weekend</h3><ul><li>Готовый ритм на три дня</li><li>Для дома, апартаментов или дачи</li><li>Вечер не заканчивается после одного раунда</li></ul><div class="price-value"><b>9 990 ₽</b><span>за 3 дня</span></div><button class="outline-button booking-trigger" type="button">Выбрать выходные</button></article>
         </div>
       </section>
 
-      <section class="offers section" id="offers">
-        <div class="section-kicker">05 / Акции</div>
-        <div class="offer-card">
-          <div><p class="eyebrow">Для первого вечера</p><h2>Первый<br /><em>доставим</em><br />особенно.</h2></div>
-          <div class="offer-side"><strong>−15%</strong><p>на первый заказ комплекта<br />PS5 + кальян</p><button class="pill-button booking-trigger" type="button">Получить скидку <span>↗</span></button></div>
-        </div>
+      <section class="why section" id="why">
+        <div class="section-kicker">06 / Почему IGROK</div>
+        <div class="why-intro"><h2>Вечер начинается<br />там, где <em>вы.</em></h2><p>Не нужно искать свободный клуб, ехать через город и собирать всё по отдельности. Вы выбираете готовый сценарий — мы берём на себя остальное.</p></div>
+        <div class="why-graphic" aria-label="Как работает сервис IGROK"><div class="why-core"><small>IGROK</small><strong>ВЕЧЕР<br />ГОТОВ</strong><span>PS5 · кальян · доставка</span></div><article><b>01</b><strong>Выбираете настроение</strong><span>вдвоём, с друзьями или на выходные</span></article><article><b>02</b><strong>Пишете нам</strong><span>повод, адрес и время — в одном сообщении</span></article><article><b>03</b><strong>Получаете всё готовое</strong><span>привезём к двери и поможем подключить</span></article><article><b>04</b><strong>Проводите вечер</strong><span>играете и отдыхаете, а заберём всё сами</span></article></div>
+        <div class="why-bottom"><p>Больше времени на игру, разговоры и настроение.<br /><b>Меньше времени на организацию вечера.</b></p><button class="pill-button contact-trigger" type="button">Собрать свой вечер <span>↗</span></button></div>
       </section>
 
       <section class="contacts section" id="contacts">
-        <div class="section-kicker">06 / Контакты</div>
-        <div class="contacts-layout"><h2>Ваш<br /><em>идеальный</em><br />вечер ждёт.</h2><div><p>Напишите нам — подскажем по комплектам, времени доставки и ответим на все вопросы.</p><button class="primary-button contact-trigger" type="button">Связаться с нами <span>↗</span></button><p class="delivery-note">Москва · доставка ежедневно</p></div></div>
+        <div class="section-kicker">07 / Контакты</div>
+        <div class="contacts-layout"><h2>Ваш<br /><em>идеальный</em><br />вечер ждёт.</h2><div><p>Сегодня можно ничего не придумывать. Напишите нам, назовите повод — и мы привезём готовый вечер, который останется только прожить.</p><button class="primary-button contact-trigger" type="button">Выбрать вечер <span>↗</span></button><p class="delivery-note">Москва · доставка ежедневно</p></div></div>
+        <div class="contacts-visual"><img src="assets/igrok-evening.png" alt="Вечер с PlayStation 5 и кальяном в панорамной гостиной" /><div class="contacts-visual-overlay"><span>IGROK / ВАШ СЦЕНАРИЙ</span><strong>Соберите вечер,<br />о котором говорят<br /><em>на следующий день.</em></strong><button class="pill-button contact-trigger" type="button">Начать вечер <span>↗</span></button></div></div>
       </section>
     </main>
 
@@ -105,14 +113,10 @@
       <div class="modal-content contact-modal-content">
         <button class="modal-close" type="button" aria-label="Закрыть" data-close>×</button>
         <div class="modal-art"></div>
-        <div class="modal-inner"><p class="eyebrow">IGROK / Москва</p><h2 id="contact-title">Связаться<br /><em>с нами</em></h2><p class="modal-lead">Контакты скоро появятся здесь. Пока можно оставить заявку — мы подготовим ваш идеальный вечер.</p><div class="contact-links"><a href="#" aria-label="Telegram IGROK"><span>Telegram</span><b>@igrok_moscow</b><i>↗</i></a><a href="#" aria-label="ВКонтакте IGROK"><span>ВКонтакте</span><b>vk.com/igrok_moscow</b><i>↗</i></a><a href="tel:+79990000000" aria-label="Позвонить в IGROK"><span>Телефон</span><b>+7 999 000-00-00</b><i>↗</i></a></div></div>
+        <div class="modal-inner"><p class="eyebrow">IGROK / Москва</p><h2 id="contact-title">Связаться<br /><em>с нами</em></h2><p class="modal-lead">Контакты скоро появятся здесь. Пока просто расскажите, какой вечер планируется — мы предложим готовый сценарий.</p><div class="contact-links"><a href="#" aria-label="Telegram IGROK"><span>Telegram</span><b>@igrok_moscow</b><i>↗</i></a><a href="#" aria-label="ВКонтакте IGROK"><span>ВКонтакте</span><b>vk.com/igrok_moscow</b><i>↗</i></a><a href="tel:+79990000000" aria-label="Позвонить в IGROK"><span>Телефон</span><b>+7 999 000-00-00</b><i>↗</i></a></div></div>
       </div>
     </div>
 
-    <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title" aria-hidden="true">
-      <div class="modal-backdrop" data-close></div>
-      <div class="modal-content booking-modal-content"><button class="modal-close" type="button" aria-label="Закрыть" data-close>×</button><p class="eyebrow">IGROK / бронь</p><h2 id="booking-title">Создайте<br /><em>свой вечер</em></h2><form id="booking-form"><label>Ваше имя<input required name="name" placeholder="Как к вам обращаться" /></label><label>Телефон<input required name="phone" inputmode="tel" placeholder="+7 999 000-00-00" /></label><label>Комплект<select name="kit"><option>PlayStation 5</option><option>PS5 + кальян</option><option>Weekend</option></select></label><button class="primary-button" type="submit">Оставить заявку <span>↗</span></button></form><p class="form-note" id="form-note">Менеджер подтвердит заказ и согласует время доставки.</p></div>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>

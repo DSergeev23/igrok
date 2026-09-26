@@ -4,27 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#08060d" />
-    <meta name="description" content="IGROK — аренда PlayStation 5 и кальянов с доставкой по Москве." />
-    <title>IGROK — сервис идеального вечера</title>
+    <meta name="description" content="Аренда PlayStation 5, PS VR2 и кальяна с доставкой по Москве. Готовые сценарии для вечера от 2 000 ₽. Доставка в пределах МКАД — 600 ₽." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://igrokk.ru/" />
+    <title>Аренда PlayStation 5, PS VR2 и кальяна в Москве — IGROK</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="IGROK" />
+    <meta property="og:title" content="Аренда PlayStation 5, PS VR2 и кальяна в Москве — IGROK" />
+    <meta property="og:description" content="Готовые сценарии идеального вечера с доставкой по Москве: PS5, виртуальная реальность и кальян." />
+    <meta property="og:url" content="https://igrokk.ru/" />
+    <meta property="og:image" content="https://igrokk.ru/assets/igrok-evening.png" />
+    <meta property="og:image:width" content="1672" />
+    <meta property="og:image:height" content="941" />
+    <meta property="og:image:alt" content="PlayStation 5 и кальян в премиальном неоновом оформлении IGROK" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Аренда PlayStation 5, PS VR2 и кальяна в Москве — IGROK" />
+    <meta name="twitter:description" content="Готовые сценарии идеального вечера с доставкой по Москве." />
+    <meta name="twitter:image" content="https://igrokk.ru/assets/igrok-evening.png" />
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preload" as="image" href="assets/igrok-hero-wide.png" media="(min-width: 781px)" />
+    <link rel="preload" as="image" href="assets/igrok-hero-mobile.png" media="(max-width: 780px)" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="overrides.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://igrokk.ru/#website",
+            "url": "https://igrokk.ru/",
+            "name": "IGROK",
+            "alternateName": "IGROK — сервис идеального вечера",
+            "inLanguage": "ru-RU"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://igrokk.ru/#organization",
+            "name": "IGROK",
+            "url": "https://igrokk.ru/",
+            "description": "Сервис аренды PlayStation 5, PS VR2 и кальянов с доставкой по Москве.",
+            "telephone": "+7-919-219-91-83",
+            "areaServed": {
+              "@type": "City",
+              "name": "Москва"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+7-919-219-91-83",
+              "contactType": "customer service",
+              "areaServed": "RU",
+              "availableLanguage": "Russian"
+            },
+            "sameAs": [
+              "https://t.me/PS_IGROK",
+              "https://vk.ru/club241452573"
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://igrokk.ru/#rental-service",
+            "name": "Аренда PlayStation 5, PS VR2 и кальянов в Москве",
+            "serviceType": "Прокат игровых консолей, систем виртуальной реальности и кальянов",
+            "url": "https://igrokk.ru/#price",
+            "provider": {
+              "@id": "https://igrokk.ru/#organization"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Москва"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Аренда на один день",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "price": "2000",
+                  "priceCurrency": "RUB",
+                  "url": "https://igrokk.ru/#price",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Аренда PlayStation 5 на один день"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "price": "2000",
+                  "priceCurrency": "RUB",
+                  "url": "https://igrokk.ru/#price",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Аренда PlayStation VR2 на один день"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "price": "2000",
+                  "priceCurrency": "RUB",
+                  "url": "https://igrokk.ru/#price",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Аренда кальяна на один день"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="IGROK, на главную">IGROK<span>®</span></a>
       <nav class="desktop-nav" aria-label="Главное меню">
-        <a href="#about">О нас</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#why">Почему мы</a><a href="#contacts">Контакты</a>
+        <a href="#about">О нас</a><a href="#why">Почему мы</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#contacts">Контакты</a>
       </nav>
       <button class="outline-button contact-trigger header-contact" type="button">Связаться</button>
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
     </header>
 
     <div class="mobile-menu" aria-hidden="true">
-      <a href="#about">О нас</a><a href="#booking">Забронировать</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#why">Почему мы</a><a href="#contacts">Контакты</a>
+      <a href="#about">О нас</a><a href="#why">Почему мы</a><a href="#services">Услуги</a><a href="#price">Прайс</a><a href="#contacts">Контакты</a>
       <button class="text-button contact-trigger" type="button">Связаться</button>
     </div>
 
@@ -41,7 +149,7 @@
         <div class="about-grid">
           <h1>Вечер —<br /><em>по вашим</em><br />правилам.</h1>
           <div class="about-copy">
-            <p>Не нужно придумывать, чем занять вечер. IGROK привозит готовый сценарий отдыха: PlayStation 5, кальян и настроение — прямо к вашей двери.</p>
+            <p>Не нужно придумывать, чем занять вечер. IGROK привозит готовый сценарий отдыха: PlayStation 5, PS VR2 — систему виртуальной реальности, кальян и настроение прямо к вашей двери.</p>
             <p class="muted">Для двоих, друзей или вечера наедине: выбираете повод, а не список техники. Остальное уже продумано и готово приехать к вам после звонка.</p>
             <button class="pill-button booking-trigger" type="button">Выбрать сценарий <span>↗</span></button>
           </div>
@@ -54,26 +162,19 @@
         </div>
       </section>
 
-      <section class="booking section" id="booking">
-        <div class="booking-glow"></div>
-        <div class="section-kicker">02 / Забронировать</div>
-        <div class="booking-layout">
-          <div><p class="eyebrow">Вечер уже собран за вас</p><h2>Ваши планы<br />не должны ждать<br /><em>такси.</em></h2></div>
-          <div class="booking-panel">
-            <p>Одно сообщение — и готовый сценарий уже в пути. Уточним время, адрес и привезём всё для вашего вечера.</p>
-            <button class="primary-button booking-trigger" type="button">Выбрать сценарий <span>↗</span></button>
-            <small>Доставка по Москве · 600 ₽ в пределах МКАД</small>
-          </div>
-        </div>
-        <div class="booking-route" aria-label="Путь от заявки до вечера"><div><span>01</span><strong>Пишите нам</strong><small>когда решили, что вечер не должен быть обычным</small></div><div><span>02</span><strong>Выбираете сценарий</strong><small>для двоих, друзей или выходных</small></div><div><span>03</span><strong>Встречаете IGROK</strong><small>и переключаетесь из рутины в отдых</small></div></div>
+      <section class="why section" id="why">
+        <div class="section-kicker">02 / Почему IGROK</div>
+        <div class="why-intro"><h2>Вечер начинается<br />там, где <em>вы.</em></h2><p>Не нужно ехать через город и собирать всё по отдельности. Выберите аренду или готовый сценарий — мы привезём его по Москве.</p></div>
+        <div class="why-graphic" aria-label="Как работает сервис IGROK"><div class="why-core"><small>IGROK</small><strong>ВЕЧЕР<br />ГОТОВ</strong><span>PS5 · PS VR2 · кальян · доставка</span></div><article><b>01</b><strong>Выбираете настроение</strong><span>вдвоём, с друзьями или на выходные</span></article><article><b>02</b><strong>Пишете нам</strong><span>повод, адрес и время — в одном сообщении</span></article><article><b>03</b><strong>Получаете всё готовое</strong><span>привезём к двери и поможем подключить</span></article><article><b>04</b><strong>Проводите вечер</strong><span>играете и отдыхаете, а заберём всё сами</span></article></div>
+        <div class="why-bottom"><p>Больше времени на игру, разговоры и настроение.<br /><b>Меньше времени на организацию вечера.</b></p><button class="pill-button contact-trigger" type="button">Собрать свой вечер <span>↗</span></button></div>
       </section>
 
       <section class="services section" id="services">
         <div class="section-head"><div class="section-kicker">03 / Для любого настроения</div><p>Отдельная аренда или готовый сценарий на вечер — выбирайте то, что хочется именно сегодня.</p></div>
         <div class="service-list">
-          <article class="service-card"><span>01</span><div><h3>ИГРОК</h3><p>Когда хочется отключить уведомления и просто насладиться игрой на PlayStation 5.</p></div><button class="card-action booking-trigger" type="button" aria-label="Аренда PlayStation 5">↗</button></article>
-          <article class="service-card featured"><span>02</span><div><h3>VR-погружение</h3><p>Когда хочется сменить реальность и попробовать что-то совершенно новое. PS VR2 для вашей PlayStation 5.</p></div><button class="card-action booking-trigger" type="button" aria-label="Аренда PlayStation VR2">↗</button></article>
-          <article class="service-card"><span>03</span><div><h3>Подымим</h3><p>Когда хочется расслабиться, включить музыку и провести вечер без спешки. Кальян уже подготовлен.</p></div><button class="card-action booking-trigger" type="button" aria-label="Аренда кальяна">↗</button></article>
+          <article class="service-card"><span>01</span><div><h3>ИГРОК</h3><p>Отдельная аренда PlayStation 5 — когда хочется отключить уведомления и просто насладиться игрой.</p></div><button class="card-action booking-trigger" type="button" aria-label="Аренда PlayStation 5">↗</button></article>
+          <article class="service-card featured"><span>02</span><div><h3>VR-погружение</h3><p>Отдельная аренда PS VR2 для вашей PlayStation 5 — когда хочется сменить реальность и попробовать что-то совершенно новое.</p></div><button class="card-action booking-trigger" type="button" aria-label="Аренда PlayStation VR2">↗</button></article>
+          <article class="service-card"><span>03</span><div><h3>Подымим</h3><p>Отдельная аренда подготовленного кальяна — когда хочется расслабиться, включить музыку и провести вечер без спешки.</p></div><button class="card-action booking-trigger" type="button" aria-label="Аренда кальяна">↗</button></article>
         </div>
       </section>
 
@@ -93,17 +194,10 @@
         </div>
       </section>
 
-      <section class="why section" id="why">
-        <div class="section-kicker">06 / Почему IGROK</div>
-        <div class="why-intro"><h2>Вечер начинается<br />там, где <em>вы.</em></h2><p>Не нужно ехать через город и собирать всё по отдельности. Выберите аренду или готовый сценарий — мы привезём его по Москве.</p></div>
-        <div class="why-graphic" aria-label="Как работает сервис IGROK"><div class="why-core"><small>IGROK</small><strong>ВЕЧЕР<br />ГОТОВ</strong><span>PS5 · кальян · доставка</span></div><article><b>01</b><strong>Выбираете настроение</strong><span>вдвоём, с друзьями или на выходные</span></article><article><b>02</b><strong>Пишете нам</strong><span>повод, адрес и время — в одном сообщении</span></article><article><b>03</b><strong>Получаете всё готовое</strong><span>привезём к двери и поможем подключить</span></article><article><b>04</b><strong>Проводите вечер</strong><span>играете и отдыхаете, а заберём всё сами</span></article></div>
-        <div class="why-bottom"><p>Больше времени на игру, разговоры и настроение.<br /><b>Меньше времени на организацию вечера.</b></p><button class="pill-button contact-trigger" type="button">Собрать свой вечер <span>↗</span></button></div>
-      </section>
-
       <section class="contacts section" id="contacts">
-        <div class="section-kicker">07 / Контакты</div>
-        <div class="contacts-layout"><h2>Ваш<br /><em>идеальный</em><br />вечер ждёт.</h2><div><p>Назовите повод, время и адрес. Мы подтвердим сценарий и привезём его к вам. Доставка по Москве — 600 ₽ в пределах МКАД, за МКАД стоимость согласуем.</p><button class="primary-button contact-trigger" type="button">Выбрать вечер <span>↗</span></button><p class="delivery-note">Москва · доставка ежедневно</p></div></div>
-        <div class="contacts-visual"><img src="assets/igrok-evening.png" alt="Вечер с PlayStation 5 и кальяном в панорамной гостиной" /><div class="contacts-visual-overlay"><span>IGROK / ВАШ СЦЕНАРИЙ</span><strong>Соберите вечер,<br />о котором говорят<br /><em>на следующий день.</em></strong><button class="pill-button contact-trigger" type="button">Начать вечер <span>↗</span></button></div></div>
+        <div class="section-kicker">06 / Контакты</div>
+        <div class="contacts-layout"><h2>Ваш<br /><em>идеальный</em><br />вечер ждёт.</h2><div><p>Назовите повод, время и адрес. Мы подтвердим сценарий и привезём его к вам. Доставка к любой услуге — 600 ₽ в пределах МКАД, за МКАД стоимость согласуем.</p><button class="primary-button contact-trigger" type="button">Выбрать вечер <span>↗</span></button><p class="delivery-note">Москва · доставка ежедневно</p></div></div>
+        <div class="contacts-visual"><img src="assets/igrok-evening.png" alt="Аренда PlayStation 5, PS VR2 и кальяна для вечера в Москве" width="1672" height="941" loading="lazy" decoding="async" /><div class="contacts-visual-overlay"><span>IGROK / ВАШ СЦЕНАРИЙ</span><strong>Соберите вечер,<br />о котором говорят<br /><em>на следующий день.</em></strong><button class="pill-button contact-trigger" type="button">Начать вечер <span>↗</span></button></div></div>
       </section>
     </main>
 
@@ -118,6 +212,7 @@
       </div>
     </div>
 
+    <script src="analytics-config.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
